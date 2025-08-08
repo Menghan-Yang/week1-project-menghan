@@ -1,4 +1,10 @@
-# Week-1 Project Template
+#### What mini group 2 did:
+
+First, we selected the Schaefer 200 ROI 7 Network atlas and a few of the demographic variables (BMI, age, sex). Then, we played around with the data a bit and inspected variables that are highly correlated with our p-factors in our training data. We landed on an ElasticNet regression so we could throw many features (some of which can be interdependent/correlated) into the model and it would select the most predictive features and weight them accordingly. To prepare the data, we removed the categorical demographics data and standardized our predictors before fitting the ENet regression. Using 5-fold cross-validation, we determined the best hyperparameter L1:L2 ratio for the model to be 0.1 and the alpha of 0.47. Of the 2001 features input as predictors into the model, 114 features were retained. The out-of-sample R² = 0.0629 and MSE = 0.853.
+
+
+
+## Week-1 Project Template
 
 This repository is a template for the NeuroHackademy 2025 week-1
 projects. The goal of the project is to examine data from the
